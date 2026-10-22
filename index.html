@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SoftCraft — Neumorphic UI you can feel pressed</title>
+<meta name="description" content="A one-person studio drawing neumorphic components in pure light and shadow. Live code, Figma kits and bespoke builds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+<symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+<symbol id="play" viewBox="0 0 24 24"><path d="M7 5l12 7-12 7z" fill="currentColor"/></symbol>
+<symbol id="pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="3.5"/></symbol>
+<symbol id="prev" viewBox="0 0 24 24"><path d="M6 5v14M19 5L9 12l10 7z"/></symbol>
+<symbol id="next" viewBox="0 0 24 24"><path d="M18 5v14M5 5l10 7L5 19z"/></symbol>
+<symbol id="vol" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9zM17 9a4 4 0 0 1 0 6"/></symbol>
+<symbol id="chk" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="cp" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+<symbol id="pw" viewBox="0 0 24 24"><path d="M12 3v9M6.3 6.8a8 8 0 1 0 11.4 0"/></symbol>
+<symbol id="mk" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="6"/><rect x="3" y="13" width="8" height="8" rx="6"/><rect x="13" y="13" width="8" height="8" rx="2"/></symbol>
+<symbol id="bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol><symbol id="r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+<symbol id="mi" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol><symbol id="pl" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+<symbol id="lr" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></symbol>
+</defs></svg>
+
+<header><div class="wrap bar">
+<a href="#top" class="logo"><svg class="i" style="color:var(--acc)"><use href="#mk"/></svg>SoftCraft</a>
+<nav id="nav" aria-label="Primary"><a href="#showcase">Components</a><a href="#playground">Shadow Studio</a><a href="#pricing">Kits &amp; Pricing</a><a href="#contact">Custom Work</a></nav>
+<div class="tools">
+<button class="btn sq" id="theme" aria-label="Switch to dark theme"><svg class="i"><use href="#moon"/></svg></button>
+<a class="btn hot" href="#pricing">Get a kit</a>
+<button class="btn sq menu" id="menubtn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg class="i"><use href="#menu"/></svg></button>
+</div></div></header>
+
+<main id="top">
+<div class="hero"><div class="shapes" aria-hidden="true"><i class="s1"></i><i class="s2"></i><i class="s3"></i><i class="s4"></i></div><svg class="rings" viewBox="0 0 900 900" aria-hidden="true"><circle cx="450" cy="450" r="150"/><circle cx="450" cy="450" r="250"/><circle cx="450" cy="450" r="350"/><circle cx="450" cy="450" r="440"/></svg>
+<div class="wrap hgrid">
+<div class="htxt">
+<p class="sunk pill mono mute ld" style="--i:0">Neumorphic studio — kits, code, custom builds</p>
+<h1 class="ld" style="--i:1">Buttons that <em>push back.</em></h1>
+<p class="ld" style="--i:2">One-person studio drawing soft UI in pure light and shadow. Take the components as live code, a Figma kit, or built to your brief.</p>
+<div class="acts ld" style="--i:3"><a class="btn hot" href="#showcase">Try the live demos <svg class="i arr"><use href="#down"/></svg></a><a class="btn" href="#playground">Open Shadow Studio</a></div>
+<dl class="facts ld" style="--i:5"><div><dt class="mono mute">Components</dt><dd>60+</dd></div><div><dt class="mono mute">Text contrast</dt><dd>AA</dd></div><div><dt class="mono mute">Images used</dt><dd>0</dd></div></dl>
+</div>
+<div class="dialcard raise ld" style="--i:4" id="dial">
+<div class="dialhead"><span class="mono mute">Climate · Hub v2.4</span><div class="pow"><span class="mono" id="powl">Online</span><button class="btn sq" id="pwr" style="min-height:40px;width:40px" aria-pressed="true" aria-label="Power"><svg class="i"><use href="#pw"/></svg></button></div></div>
+<div class="dialwrap" id="dw" tabindex="0" role="slider" aria-label="Target temperature" aria-valuemin="60" aria-valuemax="85" aria-valuenow="72" aria-valuetext="72 degrees Fahrenheit">
+<svg class="ticks" id="ticks" viewBox="0 0 360 360" aria-hidden="true"></svg>
+<div class="knob" id="knob"></div>
+<div class="read"><b id="tv">72°</b><span class="mono mute" id="ts">Eco cooling active</span></div></div>
+<div class="modes" id="modes" role="group" aria-label="Mode"><button class="btn" data-m="heat" aria-pressed="false">Heat</button><button class="btn" data-m="cool" aria-pressed="false">Cool</button><button class="btn" data-m="eco" aria-pressed="true">Eco</button></div>
+<p class="mono mute" style="margin-top:16px;text-align:center">Drag the dial · or use ← →</p>
+</div></div></div>
+
+<div class="strip" aria-hidden="true"><div><span class="mono">100% pure CSS shadows</span><span class="mono">Text contrast checked to AA</span><span class="mono">Every control actually works</span><span class="mono">60+ components</span><span class="mono">Light &amp; dark tokens</span><span class="mono">100% pure CSS shadows</span><span class="mono">Text contrast checked to AA</span><span class="mono">Every control actually works</span><span class="mono">60+ components</span><span class="mono">Light &amp; dark tokens</span></div></div>
+
+<section id="showcase"><div class="wrap">
+<div class="sh rv"><div><p class="mono mute" style="margin-bottom:16px">01 — Components</p><h2>Everything on this bench <em>actually works.</em></h2></div><p>Run the sums, hit play, flip a switch. Each piece is the exact code that ships in the kit.</p></div>
+<div class="bench">
+<article class="card raise c4 rv"><header><h3>Tactile keypad</h3><span class="mono mute">Math v1</span></header>
+<div class="sunk disp"><small id="ch"></small><output id="cd" aria-live="polite">0</output></div>
+<div class="keys" id="keys"></div></article>
+
+<article class="card raise c4 rv" style="--d:.08s"><header><h3>Soft Beats, Vol. 4</h3><span class="mono mute">FLAC 24-bit</span></header>
+<div class="art"><div class="disc" id="disc"></div><div><h3 id="trk" style="font-size:1.5rem">Midnight Synthesis</h3><p class="mute">Acoustic Mind Studio</p></div></div>
+<input class="rg" type="range" id="seek" min="0" max="232" value="105" aria-label="Seek">
+<div class="times mono"><span id="cur">01:45</span><span id="dur">03:52</span></div>
+<div class="ctl"><button class="btn sq" aria-label="Previous"><svg class="i"><use href="#prev"/></svg></button><button class="btn sq hot" id="pp" aria-label="Play" style="width:72px;min-height:72px;border-radius:50%"><svg class="i"><use href="#play"/></svg></button><button class="btn sq" aria-label="Next"><svg class="i"><use href="#next"/></svg></button></div>
+<div class="vol"><svg class="i mute"><use href="#vol"/></svg><input class="rg" type="range" min="0" max="100" value="70" aria-label="Volume"></div>
+<div class="sunk q" id="q" role="group" aria-label="Queue"><button aria-pressed="true" data-n="Midnight Synthesis" data-s="232"><span>Midnight Synthesis</span><span class="mono mute">03:52</span></button><button aria-pressed="false" data-n="Paper Lanterns" data-s="198"><span>Paper Lanterns</span><span class="mono mute">03:18</span></button><button aria-pressed="false" data-n="Low Tide Static" data-s="245"><span>Low Tide Static</span><span class="mono mute">04:05</span></button></div></article>
+
+<article class="card raise c4 rv" style="--d:.16s"><header><h3>Revenue</h3><span class="mono up">+18.4%</span></header>
+<div class="kpi"><b>$24,890</b><small class="mono">Total · +12% vs last month</small></div>
+<div class="kpi"><b>1,420</b><small class="mono">Subscriptions · +84 today</small></div>
+<div class="kpi"><b>4.62%</b><small class="mono">Conversion · steady</small></div>
+<div class="sunk bars" id="bars" role="img" aria-label="Weekly sales output chart"></div>
+<div class="sunk seg" id="seg" role="group" aria-label="Range"><button class="btn" aria-pressed="false">Day</button><button class="btn" aria-pressed="true">Week</button><button class="btn" aria-pressed="false">Month</button></div></article>
+
+<article class="card raise c4 rv"><header><h3>Inputs</h3><span class="mono mute">Debossed</span></header>
+<label class="fld"><span class="mono mute">Text field</span><input type="text" placeholder="Type inside…"></label>
+<div class="row"><span>Push notifications</span><label class="sw"><input type="checkbox" role="switch" checked data-t="Notification settings updated"><i></i><span class="sr">Push notifications</span></label></div>
+<div class="row"><span>Haptic feedback</span><label class="sw"><input type="checkbox" role="switch" data-t="Haptics toggled"><i></i><span class="sr">Haptic feedback</span></label></div>
+<div class="push"><label class="row" for="gain"><span class="mono mute">Gain</span><output class="mono" id="gv">60%</output></label><input class="rg" id="gain" data-o="gv" type="range" min="0" max="100" value="60"></div></article>
+
+<article class="card raise c4 rv" style="--d:.08s"><header><h3>Smart lights</h3><span class="mono mute">4 zones</span></header>
+<div class="lg" id="lg"><button class="btn" aria-pressed="true"><svg class="i"><use href="#bulb"/></svg>Living room</button><button class="btn" aria-pressed="false"><svg class="i"><use href="#bulb"/></svg>Kitchen</button><button class="btn" aria-pressed="true"><svg class="i"><use href="#bulb"/></svg>Bedroom</button><button class="btn" aria-pressed="false"><svg class="i"><use href="#bulb"/></svg>Porch</button></div>
+<div class="push"><label class="row" for="br"><span class="mono mute">Brightness</span><output class="mono" id="bv">80%</output></label><input class="rg" id="br" data-o="bv" type="range" min="5" max="100" value="80"></div></article>
+
+<article class="card raise c4 rv" style="--d:.16s"><header><h3>Activity</h3><span class="mono mute">Today</span></header>
+<div class="ring">
+<div><svg viewBox="0 0 88 88" role="img" aria-label="Move 72 percent"><circle class="tr" cx="44" cy="44" r="36"/><circle class="pg" cx="44" cy="44" r="36" style="--v:.72"/></svg><b>72%</b><span class="mono mute">Move</span></div>
+<div><svg viewBox="0 0 88 88" role="img" aria-label="Focus 54 percent"><circle class="tr" cx="44" cy="44" r="36"/><circle class="pg" cx="44" cy="44" r="36" style="--v:.54"/></svg><b>54%</b><span class="mono mute">Focus</span></div>
+<div><svg viewBox="0 0 88 88" role="img" aria-label="Sleep 88 percent"><circle class="tr" cx="44" cy="44" r="36"/><circle class="pg" cx="44" cy="44" r="36" style="--v:.88"/></svg><b>88%</b><span class="mono mute">Sleep</span></div></div>
+<div class="push"><div class="sunk" style="padding:16px 24px;display:flex;justify-content:space-between;align-items:baseline"><span class="mono mute">Daily streak</span><b style="font:400 1.75rem var(--serif)">12 days</b></div></div></article>
+
+<article class="card raise c5 rv"><header><h3 id="calh">Month</h3><div style="display:flex;gap:12px"><button class="btn sq" id="cprev" aria-label="Previous month" style="min-height:40px;width:40px"><svg class="i"><use href="#l"/></svg></button><button class="btn sq" id="cnext" aria-label="Next month" style="min-height:40px;width:40px"><svg class="i"><use href="#r"/></svg></button></div></header>
+<div class="cal" id="cal"></div><p class="mono mute push" id="cs"></p></article>
+
+<article class="card raise c7 rv" style="--d:.1s"><header><h3>Selection controls</h3><span class="mono mute">Chips · radios · stepper</span></header>
+<div class="ctl2"><div><span class="mono mute lab">Style tags</span><div class="chips" id="chips"><button class="btn" aria-pressed="true">Soft</button><button class="btn" aria-pressed="false">Minimal</button><button class="btn" aria-pressed="true">Tactile</button><button class="btn" aria-pressed="false">Playful</button></div>
+<span class="mono mute lab" style="margin-top:32px">Shadow style</span>
+<label class="opt"><input type="radio" name="ss" checked><i></i>Extruded</label><label class="opt"><input type="radio" name="ss"><i></i>Inset</label><label class="opt"><input type="radio" name="ss"><i></i>Flat</label></div>
+<div><span class="mono mute lab">Licenses</span><div class="sunk step"><button class="btn sq" id="m1" aria-label="Fewer licenses"><svg class="i"><use href="#mi"/></svg></button><output id="sv" aria-live="polite">3</output><button class="btn sq" id="p1" aria-label="More licenses"><svg class="i"><use href="#pl"/></svg></button></div>
+<span class="mono mute lab" style="margin-top:32px">Include</span>
+<label class="opt cb"><input type="checkbox" checked><i></i>Dark-mode tokens</label><label class="opt cb"><input type="checkbox"><i></i>Figma source</label><label class="opt cb"><input type="checkbox" checked><i></i>React components</label></div></div>
+<div class="push"><div class="sunk" style="padding:16px 24px"><span class="mono mute" style="display:block;margin-bottom:4px">Your selection</span><span id="sum"></span></div></div></article>
+</div></div></section>
+
+<section id="compare" style="padding-top:0"><div class="wrap">
+<div class="sh rv"><div><p class="mono mute" style="margin-bottom:16px">02 — Flat vs soft</p><h2>Same screen. <em>More weight.</em></h2></div><p>Drag the handle. Left is a flat interface, right is the identical layout with depth added. Notice how much easier the toggles, fields and buttons are to read.</p></div>
+<div class="cmp raise rv" id="cmp" role="group" aria-label="Flat versus soft UI comparison">
+<div class="pane soft" inert><span class="lbl mono">Soft</span><div class="ui"><h3>Studio settings</h3><div class="f">Project name</div><div class="r"><span>Dark tokens</span><span class="t"></span></div><div class="r"><span class="bt">Cancel</span><span class="bt p">Save changes</span></div><div class="pr"></div></div></div>
+<div class="pane flat" inert><span class="lbl mono">Flat</span><div class="ui"><h3>Studio settings</h3><div class="f">Project name</div><div class="r"><span>Dark tokens</span><span class="t"></span></div><div class="r"><span class="bt">Cancel</span><span class="bt p">Save changes</span></div><div class="pr"></div></div></div>
+<div class="hd" aria-hidden="true"><span class="kn"><svg class="i"><use href="#lr"/></svg></span></div>
+<input class="cmpr" type="range" min="0" max="100" value="50" aria-label="Reveal flat or soft version">
+</div></div></section>
+
+<section id="playground"><div class="wrap">
+<div class="sh rv"><div><p class="mono mute" style="margin-bottom:16px">03 — Shadow Studio</p><h2>Dial in your own <em>light source.</em></h2></div><p>Drag the sliders, watch the shadow resolve, copy the CSS. No sign-up.</p></div>
+<div class="sgrid">
+<div class="rv panel raise l"><div class="ctrl"><label class="mono" for="d">Distance <span id="vd">9px</span></label><input class="rg" id="d" type="range" min="3" max="30" value="9"></div>
+<div class="ctrl"><label class="mono" for="b">Blur radius <span id="vb">16px</span></label><input class="rg" id="b" type="range" min="5" max="50" value="16"></div>
+<div class="ctrl"><label class="mono" for="s">Softness <span id="vs">15%</span></label><input class="rg" id="s" type="range" min="5" max="40" value="15"></div>
+<div class="ctrl"><label class="mono" for="rad">Corner radius <span id="vr">24px</span></label><input class="rg" id="rad" type="range" min="8" max="50" value="24"></div>
+<div class="tg" id="tg" role="group" aria-label="Shadow type"><button aria-pressed="true" data-k="">Extruded</button><button aria-pressed="false" data-k="inset ">Inset</button></div></div>
+<div class="rv panel raise" style="--d:.1s"><div class="stage"><div id="pv"><span class="mono">Preview</span></div></div>
+<pre><code id="out"></code></pre>
+<button class="btn" id="cp"><svg class="i"><use href="#cp"/></svg>Copy CSS</button></div>
+</div></div></section>
+
+<section id="pricing"><div class="wrap">
+<div class="sh rv"><div><p class="mono mute" style="margin-bottom:16px">04 — Kits &amp; pricing</p><h2>Pick your kit. <em>Pay once.</em></h2></div><p>Figma files, production code, or a one-off build. One payment, no seats, no subscriptions.</p></div>
+<div>
+<div class="tier rv"><div><p class="mono mute">Starter pack</p><h3>Figma UI Kit</h3></div><div class="price">$29<small>one-time</small></div>
+<ul><li><svg class="i"><use href="#chk"/></svg>60+ neumorphic Figma components</li><li><svg class="i"><use href="#chk"/></svg>Auto Layout 5.0 ready</li><li><svg class="i"><use href="#chk"/></svg>Light &amp; dark style tokens</li><li><svg class="i"><use href="#chk"/></svg>HTML/CSS code export</li></ul>
+<button class="btn" data-buy="Starter Figma Kit|29">Buy Figma kit</button></div>
+<div class="tier pop rv"><div><span class="tag mono">Most popular</span><p class="mono mute">Full suite</p><h3>Developer Bundle</h3></div><div class="price">$69<small>one-time</small></div>
+<ul><li><svg class="i"><use href="#chk"/></svg>Everything in the Figma kit</li><li><svg class="i"><use href="#chk"/></svg>HTML/Tailwind &amp; React components</li><li><svg class="i"><use href="#chk"/></svg>Smart-home &amp; audio widgets</li><li><svg class="i"><use href="#chk"/></svg>Unlimited commercial license</li></ul>
+<button class="btn hot" data-buy="Developer Source Bundle|69">Get the bundle</button></div>
+<div class="tier rv"><div><p class="mono mute">Custom work</p><h3>Bespoke Design</h3></div><div class="price">$290+<small>per project</small></div>
+<ul><li><svg class="i"><use href="#chk"/></svg>Design sprint, start to finish</li><li><svg class="i"><use href="#chk"/></svg>Dedicated front-end build</li><li><svg class="i"><use href="#chk"/></svg>Accessibility pass</li><li><svg class="i"><use href="#chk"/></svg>1-on-1 developer support</li></ul>
+<a class="btn" href="#contact">Hire for a project</a></div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap cgrid">
+<div class="rv"><p class="mono mute">05 — Custom work</p><h2>Got a project <em>in mind?</em></h2><p class="mute" style="max-width:34ch;font-size:1.125rem">Dashboards, IoT panels, a full redesign. Tell me what you’re building. I read every message and reply personally.</p>
+<a class="mail" href="mailto:webdevmanash@gmail.com?subject=SoftCraft%20enquiry">webdevmanash@gmail.com</a>
+<div class="acts"><a class="btn hot" href="mailto:webdevmanash@gmail.com?subject=SoftCraft%20enquiry">Email me directly</a><button class="btn" id="cpm" type="button"><svg class="i"><use href="#cp"/></svg>Copy address</button></div></div>
+<form class="card raise rv" style="--d:.1s" id="cf">
+<div class="two"><label class="fld"><span class="mono mute">Your name</span><input required autocomplete="name" placeholder="Alex Morgan"></label><label class="fld"><span class="mono mute">Your email</span><input type="email" required autocomplete="email" placeholder="alex@company.com"></label></div>
+<label class="fld"><span class="mono mute">Project type</span><select><option>Custom neumorphic UI kit</option><option>IoT / web app dashboard</option><option>Existing website redesign</option><option>Other inquiry</option></select></label>
+<label class="fld"><span class="mono mute">Message</span><textarea rows="4" required placeholder="Scope, timeline, anything that helps…"></textarea></label>
+<button class="btn hot" type="submit" style="width:100%">Send inquiry <svg class="i arr"><use href="#arr"/></svg></button></form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="mono mute"><span>© 2026 SoftCraft Neumorphic Studio</span><span><a href="mailto:webdevmanash@gmail.com">webdevmanash@gmail.com</a> &nbsp; <a href="#">Dribbble</a> &nbsp; <a href="#">GitHub</a> &nbsp; <a href="#">X</a></span></div><div class="big" aria-hidden="true">SoftCraft</div></div></footer>
+
+<dialog id="dlg" class="raise" aria-labelledby="dt"><button class="btn sq x" id="dx" aria-label="Close"><svg class="i"><use href="#x"/></svg></button>
+<p class="mono mute">Demo checkout</p><h3 id="dt" style="margin-top:8px">Kit</h3>
+<div class="tot"><span class="mono mute">License total</span><b id="dp">$0</b></div>
+<label class="fld"><span class="mono mute">Email for the download link</span><input type="email" id="de" placeholder="you@studio.com"></label>
+<button class="btn hot" id="dbuy" style="width:100%">Complete demo purchase</button>
+<p class="mute" style="margin-top:16px;font-size:.875rem">This is a showcase. Nothing is charged; it only simulates a license.</p></dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<a class="btn sq" id="up" href="#top" aria-label="Back to top"><svg class="i"><use href="#up"/></svg></a>
+<div id="prog" aria-hidden="true"></div>
+<div class="cur" id="cur2" aria-hidden="true"></div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
